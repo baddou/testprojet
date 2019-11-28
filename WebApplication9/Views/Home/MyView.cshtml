@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+    @{ 
+        WebApplication9.Models.Employee em = (WebApplication9.Models.Employee)ViewBag.emp;
+    }
+</head>
+<body>
+    <div> 
+ 
+        
+        
+                First name : @em.FirstName <br />
+        Last name : @em.LastName <br />
+        Salaire : @em.Salary
+    </div>
+</body>
+</html>
